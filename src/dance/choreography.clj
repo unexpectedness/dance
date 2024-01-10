@@ -1,12 +1,12 @@
 (ns dance.choreography
-  (:require [clojure.set :as set]
+  (:require [clojure.set          :as    set]
             [shuriken.associative :refer [getsoc]]
-            [shuriken.destructure :refer [deconstruct]]
-            [shuriken.sequential :refer [get-nth assoc-nth-in]]
-            [shuriken.spec :refer [conform!]]
-            [threading.core :refer :all]
-            [weaving.core :refer :all]
-            [dance.floor :refer :all]))
+            [derrida.core         :refer [deconstruct]]
+            [shuriken.sequential  :refer [get-nth assoc-nth-in]]
+            [shuriken.spec        :refer [conform!]]
+            [threading.core       :refer :all]
+            [weaving.core         :refer :all]
+            [dance.floor          :refer :all]))
 
 (defdance parent-dance
   "A dance that keeps track of the parent node.
