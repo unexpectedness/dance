@@ -1,4 +1,4 @@
-(defproject net.clojars.unexpectedness/dance "0.1.4.1"
+(defproject net.clojars.unexpectedness/dance "0.1.4.2"
   :description "Advanced tree walking in Clojure"
   :url "https://github.com/unexpectedness/dance"
   :license {:name "Eclipse Public License"
@@ -17,7 +17,7 @@
             "test"    ["do" ["inline-deps"] ["with-profile" "+plugin.mranderson/config" "test"]]
             "uberjar" ["do" ["inline-deps"] ["with-profile" "+plugin.mranderson/config" "uberjar"]]
             "jar"     ["do" ["inline-deps"] ["with-profile" "+plugin.mranderson/config" "jar"]]
-            "deploy"  ["do" ["inline-deps"] ["with-profile" "+plugin.mranderson/config" "deploy"]]
+            "deploy"  ["do" ["inline-deps"] ["with-profile" "+plugin.mranderson/config" "deploy" "clojars"]]
             "install" ["do" ["inline-deps"] ["with-profile" "+plugin.mranderson/config" "install"]]}
   :codox {:source-uri "https://github.com/unexpectedness/dance/" \
                       "blob/{version}/{filepath}#L{line}"
